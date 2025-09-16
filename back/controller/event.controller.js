@@ -20,7 +20,7 @@ const createEvent = async (req, res) => {
 const getAllEvent = async (req, res) => {
     try {
         const event = await Event.find();
-        return res.status(201).json({ event })
+        return res.status(200).json({ event })
     } catch(err) {
         return res.status(500).json({ error: err.message })
     }
@@ -30,7 +30,7 @@ const getEventById = async (req, res) => {
     try {
         const { id } = req.params;
         const event = await Event.findById(id);
-        return res.status(201).json({ event });
+        return res.status(200).json({ event });
     } catch(err) {
         return res.status(500).json({ error: err.message })
     }
@@ -47,7 +47,7 @@ const updateEvent = async (req, res) => {
             { new: true } 
         )
 
-        return res.status(201).json({ saveEvent });
+        return res.status(200).json({ saveEvent });
     } catch(err) {
         return res.status(500).json({ error: err.message })
     }
@@ -60,7 +60,7 @@ const deleteEvent = async (req, res) => {
         if(!exists) return res.status(404).json({ message: "Event not found" })
 
         const delEvent = await Event.findByIdAndDelete(id);
-        return res.status(201).json({ delEvent });
+        return res.status(200).json({ delEvent });
     } catch(err) {
         return res.status(500).json({ error: err.message })
     }
