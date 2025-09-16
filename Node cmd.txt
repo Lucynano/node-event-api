@@ -1,0 +1,48 @@
+npm init -y : create package.json (initialiser le projet)
+npm i handlebars : generer code html
+npm i express: installation express
+npm i cookie-parser: install cookies
+npm i lodash
+npm i loader
+npm i socket.io
+npm i passport passport-local express-session : Authentification
+npm install connect-flash
+npm install dotenv
+
+npm install cors : //Pour gérer les requêtes Cross-Origin (très utile si frontend et backend sont sur des ports différents)
+npm install -D typescript ts-node-dev @types/node @types/express @types/cors : //Typescript
+
+
+npm outdated: package obsolete
+npm search sass: chercher les package (ex: sass)
+
+npm i mongodb
+npm i mysql
+npm i mysql2
+npm i body-parser
+npm i -g nodemon@latest -> simplifie la processus de developpement d'app node js
+npm i express-async-error: gerer l'erreur du manière asynchrone
+npm i --save-dev mocha chai
+npm install mariadb
+npm i mysql2 sequelize
+npm i sequelize pg
+
+AUTHENTIFICATION:
+1. Authentification avec JWT (JSON Web Token)
+npm install jsonwebtoken
+npm install -D @types/jsonwebtoken
+
+2. Hashage des mots de passe avec Bcrypt
+npm install bcrypt
+npm install -D @types/bcrypt
+
+3. Middleware de sécurité & contrôle
+npm install express-validator
+
+4. Si tu veux une gestion complète de sessions (alternative à JWT)
+npm install express-session
+npm install -D @types/express-session
+*Mais dans un projet d’API REST moderne, JWT est préféré à express-session.
+
+5. Si tu veux sécuriser les headers HTTP (optionnel mais recommandé)
+npm install helmet
