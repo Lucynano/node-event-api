@@ -6,9 +6,11 @@ const createEvent = async (req, res) => {
     // req: body{titre, date_debut, date_fin}
 
     // const { titre, lieu, date_debut } = req.body
+    const image = req.file ? req.file.filename: null
     try {
         const saveEvent = await Event.create({
-            ...req.body
+            ...req.body,
+            image
         }) 
         // await res.save(saveEvent)
         return res.status(201).json({ saveEvent });
