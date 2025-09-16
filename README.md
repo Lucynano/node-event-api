@@ -3,7 +3,7 @@ Event Rest API with Nodejs and MongoDB:
 
 POST http://localhost:8000/event/:
 
-<img width="1920" height="1080" alt="Screenshot from 2025-09-16 22-10-42" src="https://github.com/user-attachments/assets/e3cce53c-9a18-4635-90bf-9954da698035" />
+<img width="1920" height="1080" alt="Screenshot from 2025-09-17 00-27-33" src="https://github.com/user-attachments/assets/ad1d59fa-c141-468f-80f9-988e3fcb55b8" />
 
 
 GET http://localhost:8000/event/:
